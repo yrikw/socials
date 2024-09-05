@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 
 <!-- Auther: Shorouk Abdelaziz  https://shorouk.dev -->
 
@@ -9,6 +8,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Socials</title>
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
   <style>
@@ -20,7 +21,6 @@
 
     body {
       display: grid;
-      font-family: "Poppins", sans-serif;
       place-items: center;
     }
 
@@ -30,62 +30,76 @@
 
     }
 
+    .fill {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      color: #fff;
+      outline: 0;
+      cursor: pointer;
+      position: relative;
+      margin: 5px;
+      background-color: #4b4b4b;
+    }
+
     .icon {
-      /* Change the icon size here */
-      font-size: 2em;
-      /* Change the icons colours here*/
-      color: #7a7a7a
+      font-size: 1em;
     }
 
-
-    .blog:hover {
-      color: #ffbd2f;
+    .blog:hover{
+      background-color: #ffbd2f;
     }
 
-    .email:hover {
-      color: #23c8c8;
+    .email:hover{
+      background-color: #23c8c8;
     }
 
-    .facebook:hover {
-      color: #4267B2;
+    .facebook:hover{
+      background-color: #4267B2;
     }
 
-    .instagram:hover {
-      color: rgb(241, 102, 217);
+    .instagram:hover{
+      background: #f86ee1;
     }
 
-    .linkedin:hover {
-      color: #0e76a8;
+    .linkedin:hover{
+      background-color: #0e76a8;
     }
 
-    .twitter:hover {
-      color: #26a7de;
+    .twitter:hover{
+      background-color: #26a7de;
     }
 
-    .reddit:hover {
-      color: #ff4500;
+    .reddit:hover{
+      background-color: #ff4500;
     }
 
-    .tiktok:hover {
-      color: #ff0050;
+    .tiktok:hover{
+      background-color: #ff0050;
     }
 
-    .youtube:hover {
-      color: #FF0000;
+    .youtube:hover{
+      background-color: #FF0000;
     }
 
-    .pinterest:hover {
-      color: #c8232c;
+    .pinterest:hover{
+      background-color: #c8232c;
     }
 
-    .telegram:hover {
-      color: #2AABEE;
+    .telegram:hover{
+      background-color: #2AABEE;
     }
 
     .social {
       position: relative;
       margin: 10px;
       cursor: pointer;
+    }
+
+    .social:hover {
+      color: #fff;
     }
   </style>
 
@@ -97,37 +111,23 @@
 
     <div class="wrapper">
 
-      <!-- Start blog Icon -->
-      <div id="blog" onclick="navigate(this.id)" class="social">
-        <span class="icon blog"><i class="fa-solid fa-blog"></i></span>
-      </div>
-      <!-- End blog Icon -->
-
       <!-- Start email Icon -->
-      <div id="email" onclick="navigate(this.id)" class="social">
+      <div id="email" onclick="navigate(this.id)" class="fill email">
         <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
       </div>
       <!-- End email Icon -->
 
-      <!-- Start instagram Icon -->
-      <div id="instagram" onclick="navigate(this.id)" class="social">
-        <span class="icon instagram"><i class="fab fa-instagram"></i></span>
-      </div>
-      <!-- End instagram Icon -->
-
       <!-- Start linkedin Icon -->
-      <div id="linkedin" onclick="navigate(this.id)" class="social">
-        <span class="icon linkedin"><i class="fab fa-linkedin"></i></span>
+      <div id="linkedin" onclick="navigate(this.id)" class="fill linkedin">
+        <span class="icon"><i class="fab fa-linkedin"></i></span>
       </div>
       <!-- End linkedin Icon -->
 
-      <!-- Start twitter Icon -->
-      <div id="twitter" onclick="navigate(this.id)" class="social">
-        <span class="icon twitter"><i class="fab fa-twitter"></i></span>
+        <!-- Start Github Icon -->
+      <div id="github" onclick="navigate(this.id)" class="fill github">
+        <span class="icon"><i class="fab fa-github"></i></span>
       </div>
-      <!-- End twitter Icon -->
-
-
+      <!-- End github Icon -->
 
     </div>
 
@@ -143,9 +143,8 @@
           window.open("https://blog.shorouk.dev", '_blank').focus(); //Add the url to your blog
 
         else if (id === "email") {
-          window.open("mailto:someone@yoursite.com", '_blank').focus(); //Add your email after "mailto:""
+          window.open("mailto:yuika8829@gmail.com", '_blank').focus(); //Add your email after "mailto:""
         }
-
         else if (id === "facebook") {
           window.open("https://facebook.com/", '_blank').focus(); //Add the url to your facebook page or account
         }
@@ -153,7 +152,7 @@
           window.open("instagram.com", '_blank').focus(); //Add the url to your instagram account
         }
         else if (id === "linkedin") {
-          window.open("https://www.linkedin.com/", '_blank').focus(); //Add the url to your pinterest account
+          window.open("https://www.linkedin.com/in/yuriikw/", '_blank').focus(); //Add the url to your pinterest account
         }
         else if (id === "twitter") {
           window.open("https://twitter.com/", '_blank').focus(); //Add the url to your pinterest account
@@ -172,6 +171,9 @@
         }
         else if (id === "telegram") {
           window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
+        }
+        else if (id === "github") {
+          window.open("https://github.com/yrikw", '_blank').focus(); //Add the url to your telegram account
         }
       }
 
